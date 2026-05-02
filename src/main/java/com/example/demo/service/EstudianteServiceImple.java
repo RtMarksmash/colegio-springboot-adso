@@ -30,7 +30,7 @@ public class EstudianteServiceImple implements EstudianteService {
 	@Override
 	public Estudiante save(Estudiante e) {
 		// TODO Auto-generated method stub
-		return null;
+		return estudianteRepository.save(e);
 	}
 
 	@Override

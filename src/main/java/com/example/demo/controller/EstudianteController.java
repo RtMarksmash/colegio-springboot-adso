@@ -44,7 +44,6 @@ public class EstudianteController {
 	    	estudianteService.deleteById(id);
 	    	
 	    }
-	    
 	    @PutMapping("/actualizar/{id}")
 	    public Estudiante actualizar(@RequestBody Estudiante e, @PathVariable Integer id) {
 
