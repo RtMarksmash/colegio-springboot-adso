@@ -14,40 +14,34 @@ public class Usuario {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="usu_id")
-	private long id;
+	private Long id;
 	@Column(name="usu_username")
 	private String username;
 	@Column(name="usu_pass")
-	private String Password;
+	private String password;
 	
-
-
-
-	public Usuario(long id, String username, String password) {
+	
+	public Usuario(Long id, String username, String password) {
 		super();
 		this.id = id;
 		this.username = username;
-		Password = password;
+		this.password = password;
 	}
-	
-	
-	
+
+
 	public Usuario() {
 		super();
 	}
 
 
-
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 
 
-
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
-
 
 
 	public String getUsername() {
@@ -55,24 +49,20 @@ public class Usuario {
 	}
 
 
-
 	public void setUsername(String username) {
 		this.username = username;
 	}
 
 
-
 	public String getPassword() {
-		return Password;
+		return password;
 	}
-
 
 
 	public void setPassword(String password) {
-		Password = password;
+		this.password = password;
 	}
 	
-	
-	
+
 
 }
